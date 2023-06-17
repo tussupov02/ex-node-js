@@ -97,9 +97,6 @@ router.delete(`/delete/:postId`, async(req,res)=>{
     await fs.writeFile(`./db/drowPost.json`, JSON.stringify(data))
     res.sendStatus(200)
 })
-router.put(`/create/:postId`, async(req,res)=>{
-    console.log(`create...`, req.params);
-    
-})
+
 
 module.exports = router
